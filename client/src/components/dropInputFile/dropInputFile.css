@@ -1,0 +1,108 @@
+.dropInputFile {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    border: 2px dashed var(--border-color);
+    border-radius: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-color: var(--input-bg);
+}
+
+.dropInputFile input {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.dropInputFile:hover,
+.dropInputFile.dragover {
+    opacity: 0.6;
+}
+
+.inputFile_label {
+    text-align: center;
+    color: var(--txt-second-color);
+    font-weight: 600;
+    padding: 10px;
+}
+
+.inputFile_label img {
+    width: 100px;
+}
+
+.inputFile_preview {
+    margin-top: 30px;
+}
+
+.inputFile_preview p {
+    font-weight: 500;
+}
+
+.previewTitle {
+    margin-bottom: 20px;
+}
+
+.previewItem {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    background-color: var(--input-bg);
+    padding: 15px;
+    border-radius: 20px;
+}
+
+.itemInfo {
+    display: flex;
+}
+
+.itemInfo .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.itemInfo img {
+    width: 50px;
+    margin-right: 20px;
+}
+
+.itemBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.downloadBtn {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    cursor: pointer;
+}
+
+.removeBtn {
+    background-color: var(--box-bg);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--box-shadow);
+    cursor: pointer;
+}
+
+.previewItem:hover .itemBtn {
+    opacity: 1;
+}
